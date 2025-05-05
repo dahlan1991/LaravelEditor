@@ -2,7 +2,7 @@
 ---
 
 ## 🧐 What Is LaravelEditor?
-**LaravelEditor** is a Laravel project that seamlessly integrates the Gutenberg editor. Based on Laraberg, this project provides all the necessary communication and data to ensure the editor functions optimally within a Laravel environment, making text management and editing more intuitive.
+**LaravelEditor** is a Laravel project that seamlessly integrates the [Gutenberg editor](https://github.com/VanOns/laraberg). Based on Laraberg, this project provides all the necessary communication and data to ensure the editor functions optimally within a Laravel environment, making text management and editing more intuitive.
 
 
 ---
@@ -32,6 +32,13 @@ npm install
 ```sh
 php artisan key:generate
 php artisan migrate --seed
+```
+
+### 4️⃣ Clear the Cache and Config
+```sh
+php artisan cache:clear
+php artisan config:clear
+php artisan optimize:clear
 ```
 
 ### 5️⃣ Running the Server
