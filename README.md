@@ -33,6 +33,11 @@ npm install
 php artisan key:generate
 php artisan migrate --seed
 ```
+### 4️⃣ Symbolic Link the storage to public (MUST)
+```sh
+php artisan storage:link
+```
+
 
 ### 4️⃣ Clear the Cache and Config
 ```sh
