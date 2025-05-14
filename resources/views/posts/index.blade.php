@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Posts</h2>
+        <h2>Posts aa</h2>
 
         @foreach($posts as $post)
             <div class="post-item">
