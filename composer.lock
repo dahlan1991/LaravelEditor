@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "0267c06aaefe153a497a107f14d1ec2c",
+  "content-hash": "96ab1b3077c40f9ef75a6b54452e31ec",
   "packages": [
     {
       "name": "brick/math",
@@ -588,47 +588,31 @@
     },
     {
       "name": "embed/embed",
-      "version": "v4.4.15",
+      "version": "v3.4.18",
       "source": {
         "type": "git",
-        "url": "https://github.com/oscarotero/Embed.git",
-        "reference": "62bd05060757a874673b4cda2299d94dd18f9a85"
+        "url": "https://github.com/php-embed/Embed.git",
+        "reference": "fe379f61d3ecca7a0824c4bb3839ebe0a1819520"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/oscarotero/Embed/zipball/62bd05060757a874673b4cda2299d94dd18f9a85",
-        "reference": "62bd05060757a874673b4cda2299d94dd18f9a85",
+        "url": "https://api.github.com/repos/php-embed/Embed/zipball/fe379f61d3ecca7a0824c4bb3839ebe0a1819520",
+        "reference": "fe379f61d3ecca7a0824c4bb3839ebe0a1819520",
         "shasum": ""
       },
       "require": {
         "composer/ca-bundle": "^1.0",
         "ext-curl": "*",
         "ext-dom": "*",
-        "ext-json": "*",
         "ext-mbstring": "*",
-        "ml/json-ld": "^1.1",
-        "oscarotero/html-parser": "^0.1.4",
-        "php": "^7.4|^8",
-        "psr/http-client": "^1.0",
-        "psr/http-factory": "^1.0",
-        "psr/http-message": "^1.0|^2.0"
+        "php": "^5.6|^7.0|^8.0"
       },
       "require-dev": {
-        "brick/varexporter": "^0.3.1",
         "friendsofphp/php-cs-fixer": "^2.0",
-        "nyholm/psr7": "^1.2",
-        "oscarotero/php-cs-fixer-config": "^1.0",
-        "phpunit/phpunit": "^9.0",
-        "symfony/css-selector": "^5.0"
-      },
-      "suggest": {
-        "symfony/css-selector": "If you want to get elements using css selectors"
+        "phpunit/phpunit": "^5.7|^6.0|^7.0"
       },
       "type": "library",
       "autoload": {
-        "files": [
-          "src/functions.php"
-        ],
         "psr-4": {
           "Embed\\": "src"
         }
@@ -657,7 +641,7 @@
       "support": {
         "email": "oom@oscarotero.com",
         "issues": "https://github.com/oscarotero/Embed/issues",
-        "source": "https://github.com/oscarotero/Embed/tree/v4.4.15"
+        "source": "https://github.com/php-embed/Embed/tree/v3.4.18"
       },
       "funding": [
         {
@@ -673,7 +657,7 @@
           "type": "patreon"
         }
       ],
-      "time": "2025-01-02T16:53:09+00:00"
+      "time": "2022-07-15T09:34:07+00:00"
     },
     {
       "name": "fruitcake/php-cors",
@@ -1221,16 +1205,16 @@
     },
     {
       "name": "laravel/framework",
-      "version": "v12.12.0",
+      "version": "v12.14.1",
       "source": {
         "type": "git",
         "url": "https://github.com/laravel/framework.git",
-        "reference": "8f6cd73696068c28f30f5964556ec9d14e5d90d7"
+        "reference": "84b142958d1638a7e89de94ce75c2821c601d3d7"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/laravel/framework/zipball/8f6cd73696068c28f30f5964556ec9d14e5d90d7",
-        "reference": "8f6cd73696068c28f30f5964556ec9d14e5d90d7",
+        "url": "https://api.github.com/repos/laravel/framework/zipball/84b142958d1638a7e89de94ce75c2821c601d3d7",
+        "reference": "84b142958d1638a7e89de94ce75c2821c601d3d7",
         "shasum": ""
       },
       "require": {
@@ -1251,7 +1235,7 @@
         "guzzlehttp/uri-template": "^1.0",
         "laravel/prompts": "^0.3.0",
         "laravel/serializable-closure": "^1.3|^2.0",
-        "league/commonmark": "^2.6",
+        "league/commonmark": "^2.7",
         "league/flysystem": "^3.25.1",
         "league/flysystem-local": "^3.25.1",
         "league/uri": "^7.5.1",
@@ -1343,7 +1327,7 @@
         "php-http/discovery": "^1.15",
         "phpstan/phpstan": "^2.0",
         "phpunit/phpunit": "^10.5.35|^11.5.3|^12.0.1",
-        "predis/predis": "^2.3",
+        "predis/predis": "^2.3|^3.0",
         "resend/resend-php": "^0.10.0",
         "symfony/cache": "^7.2.0",
         "symfony/http-client": "^7.2.0",
@@ -1375,7 +1359,7 @@
         "pda/pheanstalk": "Required to use the beanstalk queue driver (^5.0).",
         "php-http/discovery": "Required to use PSR-7 bridging features (^1.15).",
         "phpunit/phpunit": "Required to use assertions and run tests (^10.5.35|^11.5.3|^12.0.1).",
-        "predis/predis": "Required to use the predis connector (^2.3).",
+        "predis/predis": "Required to use the predis connector (^2.3|^3.0).",
         "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
         "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
         "resend/resend-php": "Required to enable support for the Resend mail transport (^0.10.0).",
@@ -1432,20 +1416,20 @@
         "issues": "https://github.com/laravel/framework/issues",
         "source": "https://github.com/laravel/framework"
       },
-      "time": "2025-05-01T16:13:12+00:00"
+      "time": "2025-05-13T17:50:51+00:00"
     },
     {
       "name": "laravel/pint",
-      "version": "v1.22.0",
+      "version": "v1.22.1",
       "source": {
         "type": "git",
         "url": "https://github.com/laravel/pint.git",
-        "reference": "7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36"
+        "reference": "941d1927c5ca420c22710e98420287169c7bcaf7"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/laravel/pint/zipball/7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36",
-        "reference": "7ddfaa6523a675fae5c4123ee38fc6bfb8ee4f36",
+        "url": "https://api.github.com/repos/laravel/pint/zipball/941d1927c5ca420c22710e98420287169c7bcaf7",
+        "reference": "941d1927c5ca420c22710e98420287169c7bcaf7",
         "shasum": ""
       },
       "require": {
@@ -1457,11 +1441,11 @@
       },
       "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.75.0",
-        "illuminate/view": "^11.44.2",
-        "larastan/larastan": "^3.3.1",
+        "illuminate/view": "^11.44.7",
+        "larastan/larastan": "^3.4.0",
         "laravel-zero/framework": "^11.36.1",
         "mockery/mockery": "^1.6.12",
-        "nunomaduro/termwind": "^2.3",
+        "nunomaduro/termwind": "^2.3.1",
         "pestphp/pest": "^2.36.0"
       },
       "bin": [
@@ -1498,7 +1482,7 @@
         "issues": "https://github.com/laravel/pint/issues",
         "source": "https://github.com/laravel/pint"
       },
-      "time": "2025-04-08T22:11:45+00:00"
+      "time": "2025-05-08T08:38:12+00:00"
     },
     {
       "name": "laravel/prompts",
@@ -1752,16 +1736,16 @@
     },
     {
       "name": "league/commonmark",
-      "version": "2.6.2",
+      "version": "2.7.0",
       "source": {
         "type": "git",
         "url": "https://github.com/thephpleague/commonmark.git",
-        "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94"
+        "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/06c3b0bf2540338094575612f4a1778d0d2d5e94",
-        "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94",
+        "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
+        "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
         "shasum": ""
       },
       "require": {
@@ -1798,7 +1782,7 @@
       "type": "library",
       "extra": {
         "branch-alias": {
-          "dev-main": "2.7-dev"
+          "dev-main": "2.8-dev"
         }
       },
       "autoload": {
@@ -1855,7 +1839,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2025-04-18T21:09:27+00:00"
+      "time": "2025-05-05T12:20:28+00:00"
     },
     {
       "name": "league/config",
@@ -2302,110 +2286,6 @@
       "time": "2024-12-08T08:18:47+00:00"
     },
     {
-      "name": "ml/iri",
-      "version": "1.1.4",
-      "target-dir": "ML/IRI",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/lanthaler/IRI.git",
-        "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/lanthaler/IRI/zipball/cbd44fa913e00ea624241b38cefaa99da8d71341",
-        "reference": "cbd44fa913e00ea624241b38cefaa99da8d71341",
-        "shasum": ""
-      },
-      "require": {
-        "lib-pcre": ">=4.0",
-        "php": ">=5.3.0"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-0": {
-          "ML\\IRI": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Markus Lanthaler",
-          "email": "mail@markus-lanthaler.com",
-          "homepage": "http://www.markus-lanthaler.com",
-          "role": "Developer"
-        }
-      ],
-      "description": "IRI handling for PHP",
-      "homepage": "http://www.markus-lanthaler.com",
-      "keywords": [
-        "URN",
-        "iri",
-        "uri",
-        "url"
-      ],
-      "support": {
-        "issues": "https://github.com/lanthaler/IRI/issues",
-        "source": "https://github.com/lanthaler/IRI/tree/master"
-      },
-      "time": "2014-01-21T13:43:39+00:00"
-    },
-    {
-      "name": "ml/json-ld",
-      "version": "1.2.1",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/lanthaler/JsonLD.git",
-        "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/lanthaler/JsonLD/zipball/537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
-        "reference": "537e68e87a6bce23e57c575cd5dcac1f67ce25d8",
-        "shasum": ""
-      },
-      "require": {
-        "ext-json": "*",
-        "ml/iri": "^1.1.1",
-        "php": ">=5.3.0"
-      },
-      "require-dev": {
-        "json-ld/tests": "1.0",
-        "phpunit/phpunit": "^4"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "ML\\JsonLD\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Markus Lanthaler",
-          "email": "mail@markus-lanthaler.com",
-          "homepage": "http://www.markus-lanthaler.com",
-          "role": "Developer"
-        }
-      ],
-      "description": "JSON-LD Processor for PHP",
-      "homepage": "http://www.markus-lanthaler.com",
-      "keywords": [
-        "JSON-LD",
-        "jsonld"
-      ],
-      "support": {
-        "issues": "https://github.com/lanthaler/JsonLD/issues",
-        "source": "https://github.com/lanthaler/JsonLD/tree/1.2.1"
-      },
-      "time": "2022-09-29T08:45:17+00:00"
-    },
-    {
       "name": "monolog/monolog",
       "version": "3.9.0",
       "source": {
@@ -2822,31 +2702,31 @@
     },
     {
       "name": "nunomaduro/termwind",
-      "version": "v2.3.0",
+      "version": "v2.3.1",
       "source": {
         "type": "git",
         "url": "https://github.com/nunomaduro/termwind.git",
-        "reference": "52915afe6a1044e8b9cee1bcff836fb63acf9cda"
+        "reference": "dfa08f390e509967a15c22493dc0bac5733d9123"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/52915afe6a1044e8b9cee1bcff836fb63acf9cda",
-        "reference": "52915afe6a1044e8b9cee1bcff836fb63acf9cda",
+        "url": "https://api.github.com/repos/nunomaduro/termwind/zipball/dfa08f390e509967a15c22493dc0bac5733d9123",
+        "reference": "dfa08f390e509967a15c22493dc0bac5733d9123",
         "shasum": ""
       },
       "require": {
         "ext-mbstring": "*",
         "php": "^8.2",
-        "symfony/console": "^7.1.8"
+        "symfony/console": "^7.2.6"
       },
       "require-dev": {
-        "illuminate/console": "^11.33.2",
-        "laravel/pint": "^1.18.2",
+        "illuminate/console": "^11.44.7",
+        "laravel/pint": "^1.22.0",
         "mockery/mockery": "^1.6.12",
-        "pestphp/pest": "^2.36.0",
-        "phpstan/phpstan": "^1.12.11",
-        "phpstan/phpstan-strict-rules": "^1.6.1",
-        "symfony/var-dumper": "^7.1.8",
+        "pestphp/pest": "^2.36.0 || ^3.8.2",
+        "phpstan/phpstan": "^1.12.25",
+        "phpstan/phpstan-strict-rules": "^1.6.2",
+        "symfony/var-dumper": "^7.2.6",
         "thecodingmachine/phpstan-strict-rules": "^1.0.0"
       },
       "type": "library",
@@ -2889,7 +2769,7 @@
       ],
       "support": {
         "issues": "https://github.com/nunomaduro/termwind/issues",
-        "source": "https://github.com/nunomaduro/termwind/tree/v2.3.0"
+        "source": "https://github.com/nunomaduro/termwind/tree/v2.3.1"
       },
       "funding": [
         {
@@ -2905,60 +2785,7 @@
           "type": "github"
         }
       ],
-      "time": "2024-11-21T10:39:51+00:00"
-    },
-    {
-      "name": "oscarotero/html-parser",
-      "version": "v0.1.8",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/oscarotero/html-parser.git",
-        "reference": "10f3219267a365d9433f2f7d1694209c9d436c8d"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/oscarotero/html-parser/zipball/10f3219267a365d9433f2f7d1694209c9d436c8d",
-        "reference": "10f3219267a365d9433f2f7d1694209c9d436c8d",
-        "shasum": ""
-      },
-      "require": {
-        "php": "^7.2 || ^8"
-      },
-      "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.11",
-        "phpunit/phpunit": "^8.0"
-      },
-      "type": "library",
-      "autoload": {
-        "psr-4": {
-          "HtmlParser\\": "src"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Oscar Otero",
-          "email": "oom@oscarotero.com",
-          "homepage": "http://oscarotero.com",
-          "role": "Developer"
-        }
-      ],
-      "description": "Parse html strings to DOMDocument",
-      "homepage": "https://github.com/oscarotero/html-parser",
-      "keywords": [
-        "dom",
-        "html",
-        "parser"
-      ],
-      "support": {
-        "email": "oom@oscarotero.com",
-        "issues": "https://github.com/oscarotero/html-parser/issues",
-        "source": "https://github.com/oscarotero/html-parser/tree/v0.1.8"
-      },
-      "time": "2023-11-29T20:28:41+00:00"
+      "time": "2025-05-08T08:14:37+00:00"
     },
     {
       "name": "phpoption/phpoption",
@@ -6024,29 +5851,25 @@
     },
     {
       "name": "van-ons/laraberg",
-      "version": "dev-main",
+      "version": "v2.0.4",
       "source": {
         "type": "git",
         "url": "https://github.com/VanOns/laraberg.git",
-        "reference": "ec5027e6da782c4f73078d8be3f466388de879f3"
+        "reference": "bdc23df8fb8bed21ad40489ef278e728113b84be"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/VanOns/laraberg/zipball/ec5027e6da782c4f73078d8be3f466388de879f3",
-        "reference": "ec5027e6da782c4f73078d8be3f466388de879f3",
+        "url": "https://api.github.com/repos/VanOns/laraberg/zipball/bdc23df8fb8bed21ad40489ef278e728113b84be",
+        "reference": "bdc23df8fb8bed21ad40489ef278e728113b84be",
         "shasum": ""
       },
       "require": {
-        "embed/embed": "^4.4",
-        "php": "^8.1"
+        "embed/embed": "^3.3"
       },
       "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.62",
-        "orchestra/testbench": "^8.25",
-        "phpstan/phpstan": "^1.11",
-        "phpunit/phpunit": "^10.5"
+        "orchestra/testbench": "^3.7",
+        "phpunit/phpunit": "^7.0"
       },
-      "default-branch": true,
       "type": "library",
       "extra": {
         "laravel": {
@@ -6071,9 +5894,9 @@
       "description": "A Gutenberg implementation for Laravel",
       "support": {
         "issues": "https://github.com/VanOns/laraberg/issues",
-        "source": "https://github.com/VanOns/laraberg/tree/main"
+        "source": "https://github.com/VanOns/laraberg/tree/v2.0.4"
       },
-      "time": "2024-12-17T08:53:09+00:00"
+      "time": "2023-01-24T09:28:27+00:00"
     },
     {
       "name": "vlucas/phpdotenv",
@@ -7040,16 +6863,16 @@
     },
     {
       "name": "laravel/sail",
-      "version": "v1.42.0",
+      "version": "v1.43.0",
       "source": {
         "type": "git",
         "url": "https://github.com/laravel/sail.git",
-        "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6"
+        "reference": "71a509b14b2621ce58574274a74290f933c687f7"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/laravel/sail/zipball/2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
-        "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
+        "url": "https://api.github.com/repos/laravel/sail/zipball/71a509b14b2621ce58574274a74290f933c687f7",
+        "reference": "71a509b14b2621ce58574274a74290f933c687f7",
         "shasum": ""
       },
       "require": {
@@ -7099,7 +6922,7 @@
         "issues": "https://github.com/laravel/sail/issues",
         "source": "https://github.com/laravel/sail"
       },
-      "time": "2025-04-29T14:26:46+00:00"
+      "time": "2025-05-13T13:34:34+00:00"
     },
     {
       "name": "mockery/mockery",
@@ -9359,16 +9182,16 @@
     },
     {
       "name": "spatie/backtrace",
-      "version": "1.7.2",
+      "version": "1.7.4",
       "source": {
         "type": "git",
         "url": "https://github.com/spatie/backtrace.git",
-        "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2"
+        "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/spatie/backtrace/zipball/9807de6b8fecfaa5b3d10650985f0348b02862b2",
-        "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2",
+        "url": "https://api.github.com/repos/spatie/backtrace/zipball/cd37a49fce7137359ac30ecc44ef3e16404cccbe",
+        "reference": "cd37a49fce7137359ac30ecc44ef3e16404cccbe",
         "shasum": ""
       },
       "require": {
@@ -9406,7 +9229,7 @@
         "spatie"
       ],
       "support": {
-        "source": "https://github.com/spatie/backtrace/tree/1.7.2"
+        "source": "https://github.com/spatie/backtrace/tree/1.7.4"
       },
       "funding": [
         {
@@ -9418,7 +9241,7 @@
           "type": "other"
         }
       ],
-      "time": "2025-04-28T14:55:53+00:00"
+      "time": "2025-05-08T15:41:09+00:00"
     },
     {
       "name": "spatie/error-solutions",
@@ -9973,9 +9796,7 @@
   ],
   "aliases": [],
   "minimum-stability": "dev",
-  "stability-flags": {
-    "van-ons/laraberg": 20
-  },
+  "stability-flags": {},
   "prefer-stable": true,
   "prefer-lowest": false,
   "platform": {
