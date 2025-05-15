@@ -1,4 +1,4 @@
-# LaravelEditor
+# LaravelEditor [MIX]
 ---
 
 ## 🧐 What Is LaravelEditor?
